@@ -3,7 +3,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/{searchID}")
+@app.get("/get_data")
 def read_root(searchID):
     METERs_data = requests.get(f"https://aviationweather.gov/cgi-bin/data/metar.php?ids={searchID}")
     TAFs_data = requests.get(f"https://aviationweather.gov/cgi-bin/data/taf.php?ids={searchID}")
