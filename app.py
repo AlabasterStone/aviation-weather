@@ -6,6 +6,7 @@ app = FastAPI()
 
 origins = [
     "github.io",
+    "stblx.github.io",
 ]
 
 # 后台api允许跨域
